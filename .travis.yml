@@ -1,15 +1,20 @@
 language: ruby
 rvm:
-  - 2.4.0
+- 2.4.0
 before_install:
-  - gem install sinatra
-  - gem install rspec
-  - gem install cucumber
-  - gem install rack-test
-  - gem install webrat
-  - gem install rspec
-  - gem install simplecov
-  - gem install simplecov-console
+- gem install sinatra
+- gem install rspec
+- gem install cucumber
+- gem install rack-test
+- gem install webrat
+- gem install rspec
+- gem install simplecov
+- gem install simplecov-console
 script:
-  - cucumber
-  - rspec
+- cucumber
+- rspec
+deploy:
+  provider: heroku
+  api_key:
+    secure: JkQxHIGLux/bI1OvKPe18BztovpK912BLI9VS7sxfupiHS4DVlfD+pL6RdtyhhWnjOnBcK3u9eJLvPd9YhCJF3Ooyj8fwYRxJumj7VJH2LoHxyikWePucjSSB7RoBPeanGwSYA1giHwoDx+vtKH+kCrQ+fm4EMo/Snwg3Klc1LlsCwTqKhFNRZyKY8Sn3jMPka5Oct26cr+KKTGRvTmRFZ2HwiustjlxxqN1cQXkuwBOpo9DBl2pxAQgShvY5Pe1F07iHQ0amAp8Ur2J/3uwcOhAMX40YdC6XRC70pERpQwZrK1EfvFNFOYng3e4DyNdmTjxd4A9233WQ1nig+uKO8bsoXgfiX5WJXCX5OW5TYuPdiV6v/Y5S72PcGaiHwHsHrYbOqKiwUq734iLHy3NIftmH6I8DuK8pGJM+xnr3GrPYHlZpXn1wS6CIhwIDakfS7Z79fRRmRme1MFY056vQfdq0whKUgftI0g1mzoBrq/rMzFlhYgAmZZwVFuf9hqX5yC7m4SyqJMHJ3kS9klmjGt8BJqOjRdg/mxyAtSLNn++HWjTboLeEDqkmtuCdShCH10noGenYNfz+5yQSAOPdFyu3dGwZU0akn8KKAAXHAs0RMDFfZaJb/kD0CzrEPrEdAmz8EPcnF1xbqBfYQ32/62ThvNiYejL+3HMi6gnByE=
+  app: ingetresenraya
