@@ -1,2 +1,138 @@
-Turno del jugador: <br/>
-<%= @player %> <br/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Juego</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="/vendor/css/style.css"/>
+  </head>
+  <body id="indexBody">
+    <h1 id="indexTitle">Turno del jugador: <%= @player %></h1>
+    <center>
+      <table BORDER=1 HEIGHT=300 WIDTH=300>
+        <tr>
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box0" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(0) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(0) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(0) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td>
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box1" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(1) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(1) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(1) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td> 
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box2" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(2) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(2) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(2) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box3" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(3) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(3) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(3) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td>
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box4" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(4) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(4) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(4) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td> 
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box5" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(5) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(5) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(5) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box6" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(6) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(6) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(6) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td>
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box7" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(7) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(7) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(7) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td> 
+          <td>
+            <div style="width: 100%; height: 100%;">
+              <form action="/box8" method="get" style="width: 100%; height: 100%;">
+                <% if @table.getBox(8) == 0 %>
+                  <button type="submit" style="width: 100%; height: 100%;"></button>
+                <% elsif @table.getBox(8) == 1 %>
+                  <button type="submit" style="width: 100%; height: 100%;">X</button>
+                <% elsif @table.getBox(8) == 2 %>
+                  <button type="submit" style="width: 100%; height: 100%;">O</button>
+                <% end %>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
