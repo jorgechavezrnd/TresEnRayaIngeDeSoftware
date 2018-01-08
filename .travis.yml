@@ -10,6 +10,7 @@ before_install:
 - gem install rspec
 - gem install simplecov
 - gem install simplecov-console
+- gem install rake
 script:
 - cucumber
 - rspec
