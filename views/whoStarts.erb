@@ -1,3 +1,22 @@
-¿Quién empezará? <br/>
-<%= @player1 %> <br/>
-<%= @player2 %> <br/>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Página inicial</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="/vendor/css/style.css"/>
+  </head>
+  <body id="indexBody">
+    <h1 id="indexTitle">Bienvenido al juego Tres en raya</h1><br/>
+    <h1 id="indexTitle">¿Quién empezará?</h1>
+    <form action="/game" method="get">
+      <center>
+        <select name="primerJugador">
+          <option value="<%= @player1 %>"><%= @player1 %></option>
+          <option value="<%= @player2 %>"><%= @player2 %></option>
+        </select>
+      </center>
+      <br/><br/>
+      <center><button type="submit" class="jugar jugar1">Jugar</button></center>
+    </form>
+  </body>
+</html>

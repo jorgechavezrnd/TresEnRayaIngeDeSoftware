@@ -19,3 +19,15 @@ get '/whoStarts' do
   
   erb :whoStarts
 end
+
+get '/game' do
+  if params[:primerJugador] == $PLAYER1.getName
+    $TURN = 1
+    @player = $PLAYER1.getName
+  else
+    $TURN = 2
+    @player = $PLAYER2.getName
+  end
+  
+  erb :game
+end
