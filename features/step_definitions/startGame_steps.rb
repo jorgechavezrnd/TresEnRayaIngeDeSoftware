@@ -21,7 +21,3 @@ end
 Then("ver el titulo {string}") do |titulo|
   expect(response_body).to  match(Regexp.new(Regexp.escape(titulo)))
 end
-
-Then("ver {string}") do |jugador|
-  expect(response_body).to  match(Regexp.new(Regexp.escape(jugador)))
-end
